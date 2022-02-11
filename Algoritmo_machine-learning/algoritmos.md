@@ -4,7 +4,7 @@ Se aplicó el algoritmo J48 de árboles de decisión
 
 De la aplicación de los métodos de árboles de decisión se puede apreciar que el que genera una mayor precisión en la clasificación de los datos es el algoritmo LMT con una precisión cercana al 60%.
 
-# Cluster con K-means en SPSS
+# Cluster con K-means
 
 Primeramente se importa el archivo csv para llevar a cabo la agrupación de los  datos, en la  herramienta WEKA.
 
