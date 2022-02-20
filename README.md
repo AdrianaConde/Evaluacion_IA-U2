@@ -21,12 +21,10 @@ Python es un popular lenguaje de programación orientado a objetos que tiene las
 - Incluye varios dominios como extracción de datos, manipulación de datos, análisis de datos, extracción de características, modelado, evaluación, implementación.
 
 
-## Google Colab
-Es un producto de Google Research. Permite a cualquier usuario escribir y ejecutar código arbitrario de Python en el navegador. Es especialmente adecuado para tareas de aprendizaje automático, análisis de datos y educación. Desde un punto de vista más técnico, Colab es un servicio alojado de Jupyter Notebook que no requiere configuración y que ofrece acceso gratuito a recursos informáticos, como GPUs.[3]
 
 # Algoritmos Utilizados
 ## Arboles de Decisión
-Un Árbol de Decisión es un método analítico que a través de una representación esquemática de las alternativas disponibles facilita la toma de mejores decisiones, especialmente cuando existen riesgos, costos, beneficios y múltiples opciones. El nombre se deriva de la apariencia del modelo parecido a un árbol y su uso es amplio en el ámbito de la toma de decisiones bajo incertidumbre.  [4] 
+Un Árbol de Decisión es un método analítico que a través de una representación esquemática de las alternativas disponibles facilita la toma de mejores decisiones, especialmente cuando existen riesgos, costos, beneficios y múltiples opciones. El nombre se deriva de la apariencia del modelo parecido a un árbol y su uso es amplio en el ámbito de la toma de decisiones bajo incertidumbre.  [3] 
 #### Estructura básica de un árbol de decisión
 Los árboles de decisión están formados por nodos y su lectura se realiza de arriba hacia abajo. 
 Dentro de un árbol de decisión distinguimos diferentes tipos de nodos: 
@@ -41,7 +39,7 @@ Dentro de un árbol de decisión distinguimos diferentes tipos de nodos:
 - No es preciso que se cumplan una serie de supuestos como en la regresión lineal (linealidad, normalidad de los residuos, homogeneidad de la varianza, etc.).
 - Sirven tanto para variables dependientes cualitativas como cuantitativas, como para variables predictoras o independientes numéricas y categóricas. Además, no necesita variables dummys, aunque a veces mejoran el modelo.
 - Permiten relaciones no lineales entre las variables explicativas y la variable dependiente.
-- Nos podemos servir de ellos para categorizar variables numéricas.[4]
+- Nos podemos servir de ellos para categorizar variables numéricas.[3]
 
 #### Desventajas
 
@@ -50,18 +48,18 @@ Dentro de un árbol de decisión distinguimos diferentes tipos de nodos:
 - No suelen ser muy eficientes con modelos de regresión.
 - Crear árboles demasiado complejos puede conllevar que no se adapten bien a los nuevos datos. La complejidad resta capacidad de interpretación.
 - Se pueden crear árboles sesgados si una de las clases es más numerosa que otra.
-- Se pierde información cuando se utilizan para categorizar una variable numérica continua. [4]
+- Se pierde información cuando se utilizan para categorizar una variable numérica continua. [3]
 
 ### Algoritmo J48
-Es uno de los algoritmos de minería de datos más utilizados. El algoritmo del árbol de decisión es para averiguar la forma en que se comporta el vector de atributos para una serie de instancias, este algoritmo genera un árbol de decisión injertado el cual es utilizado en esencia para reducir errores de predicción al momento de generar un modelo. [5] [6] 
+Es uno de los algoritmos de minería de datos más utilizados. El algoritmo del árbol de decisión es para averiguar la forma en que se comporta el vector de atributos para una serie de instancias, este algoritmo genera un árbol de decisión injertado el cual es utilizado en esencia para reducir errores de predicción al momento de generar un modelo. [4] [5] 
 
 ### Decision Stump
-El operador Decision Stump se utiliza para generar un árbol de decisión con una única división. El árbol resultante se puede utilizar para clasificar ejemplos no vistos.  Los nodos de hoja de un árbol de decisión contienen el nombre de la clase, mientras que un nodo que no es de hoja es un nodo de decisión. El nodo de decisión es una prueba de atributo en la que cada rama (a otro árbol de decisión) es un valor posible del atributo. [7] [8]
+El operador Decision Stump se utiliza para generar un árbol de decisión con una única división. El árbol resultante se puede utilizar para clasificar ejemplos no vistos.  Los nodos de hoja de un árbol de decisión contienen el nombre de la clase, mientras que un nodo que no es de hoja es un nodo de decisión. El nodo de decisión es una prueba de atributo en la que cada rama (a otro árbol de decisión) es un valor posible del atributo. [6] [7]
 
 ### LMT
-Los árboles modelo logísticos se basan en la idea anterior de un árbol modelo: un árbol de decisión que tiene modelos de regresión lineal en sus hojas para proporcionar un modelo de regresión lineal por partes, es decir, los árboles de decisión ordinarios con constantes en sus hojas producirían un modelo constante por partes [9]
+Los árboles modelo logísticos se basan en la idea anterior de un árbol modelo: un árbol de decisión que tiene modelos de regresión lineal en sus hojas para proporcionar un modelo de regresión lineal por partes, es decir, los árboles de decisión ordinarios con constantes en sus hojas producirían un modelo constante por partes [8]
 ### Random Tree
-Random Tree es un Clasificador supervisado; es un algoritmo de aprendizaje que genera conjuntos de aprendizajes individuales. Los árboles aleatorios son un grupo de predictores de árboles que se denomina bosque. Los mecanismos de clasificación son los siguientes: el clasificador de árboles aleatorios obtiene el vector de características de entrada, lo clasifica con cada árbol del bosque y genera la etiqueta de clase que recibió la mayoría de los "votos". Los árboles aleatorios son esencialmente la combinación de dos algoritmos existentes en el aprendizaje automático: los árboles modelo únicos se fusionan con modelos de bosques aleatorios.[10]
+Random Tree es un Clasificador supervisado; es un algoritmo de aprendizaje que genera conjuntos de aprendizajes individuales. Los árboles aleatorios son un grupo de predictores de árboles que se denomina bosque. Los mecanismos de clasificación son los siguientes: el clasificador de árboles aleatorios obtiene el vector de características de entrada, lo clasifica con cada árbol del bosque y genera la etiqueta de clase que recibió la mayoría de los "votos". Los árboles aleatorios son esencialmente la combinación de dos algoritmos existentes en el aprendizaje automático: los árboles modelo únicos se fusionan con modelos de bosques aleatorios.[9]
 
 ## Clústers
 ### Kmeans
@@ -78,22 +76,43 @@ Etiquetas para el conjunto de datos de entrenamiento. Cada etiqueta pertenecient
 ![abrirdata](https://user-images.githubusercontent.com/40923800/154828958-4e31c28f-c6be-44f5-8cf7-518dbb8dca08.png)
 
 2.  Una vez abierto el dataset, nos dirigimos a la pestaña de Clasify
-3.  En la opción Choose escogemos el algoritmo que utilizaremos
+3.  En la opción Choose escogemos el algoritmo que utilizaremos, para este caso utilizaremos el algoritmo random tree
 4.  Seleccionamos la variable que nos permitira clasificar los datos
 ![Segundopaso](https://user-images.githubusercontent.com/40923800/154828995-ac41ec53-0d04-4db0-a57a-b966f04f54c9.png)
 
-5. 
+5. Definimos los parametros para la aplicación del algoritmo
+6. Entrenamos al algoritmo con la data que seleccionamos al inicio
+![Captura2](https://user-images.githubusercontent.com/40923800/154865002-44601dcb-c7b9-44c0-8c86-d18f1c6bbf0c.JPG)
+7. Una vez entrenado el modelo se presentan los resultados de la evaluacion del mismo, asi como la precisión, que para este caso nos presenta el 100% de clasificación correcta
+![Captura 3JPG](https://user-images.githubusercontent.com/40923800/154865149-583c0536-668b-4284-91c3-c1e60d4e9e0c.JPG)
+A traves del mismo weka podemos visualizar el arbol de decision que se genero del entrenamiento
+![arbol](https://user-images.githubusercontent.com/40923800/154866044-c04ff258-53e1-4e85-b60a-be0cc2bf8cab.JPG)
+Además de esto, weka nos permite obtener un grafico en el cual podemos observar la probabilidad de que un dato sea clasificado correctamente para esto hacemos click derecho y elgimos Visualize margin curve
+![jkjnkm](https://user-images.githubusercontent.com/40923800/154866441-c7827c74-671d-430c-a7bf-9a0e599aa03e.jpg)
+
+Finalmente obtenemos la grafica con los datos que se mencion, en este caso la probabilidad es igual a 1
+![proba](https://user-images.githubusercontent.com/40923800/154866491-ca574376-8b3f-47ae-9b71-03e8488f6872.JPG)
+
+## Predicción
+8. Ya con el modelo entrenado podemos predecir nuevos datos, para ello elegimos el nuevo dataset
+9. El nuevo dataset tendra un campo adicional el mismo que nos servira para la predicción
+10. Elegimos el campo que se desea predecir, en este caso utilizaremos label
+![wwCaptura](https://user-images.githubusercontent.com/40923800/154865476-744819aa-5c39-4a13-8689-378093f842f9.JPG)
+11. Elegimos la forma en que deseamos que se presente los datos
+![Captura](https://user-images.githubusercontent.com/40923800/154865767-a41f7d21-dfcf-4725-87f3-ab12c2920c53.JPG)
+12. Finalmente se observa la prediccion realizada con los nuevos datos
+![CapturaFinal](https://user-images.githubusercontent.com/40923800/154865934-b596fc49-a783-47c9-9014-569618d5e07a.JPG)
+
 # Conclusión
 - 
 # Bibliografía
 - [1] Tutorials Point, “What is Weka?”. Disponible en: https://www.tutorialspoint.com/weka/what_is_weka.htm (consultado Feb. 19, 2022).
 - [2] Tutorials Point, Machine Learning with Python. Disponible en: https://www.tutorialspoint.com/machine_learning_with_python/machine_learning_with_python_tutorial.pdf.
-- [3] Google, “Google Colab.” Disponible en: https://research.google.com/colaboratory/intl/es/faq.html (consultado Feb. 19, 2022).
-- [4] Qué son los árboles de decisión y para qué sirven | Máxima Formación. (n.d.). Retrieved February 13, 2022, from https://www.maximaformacion.es/blog-dat/que-son-los-arboles-de-decision-y-para-que-sirven/
-- [5] https://1library.co/article/algoritmo-graft-trabajar-distintos-atributos-lidiar-problemas-t%C3%ADpicos.zx52jowq
-- [6] https://www.researchgate.net/publication/338023179_J48_algorithms_of_machine_learning_for_predicting_user%27s_the_acceptance_of_an_E-orientation_systems
-- [7] https://docs.rapidminer.com/latest/studio/operators/modeling/predictive/trees/decision_stump.html
-- [8] https://link.springer.com/referenceworkentry/10.1007/978-0-387-30164-8_202
-- [9] https://www.cs.waikato.ac.nz/~ml/publications/2003/landwehr-etal.pdf
-- [10] http://www.irdindia.in/journal_ijaece/pdf/vol3_iss4/2.pdf
+- [3] Qué son los árboles de decisión y para qué sirven | Máxima Formación. (n.d.). Retrieved February 13, 2022, from https://www.maximaformacion.es/blog-dat/que-son-los-arboles-de-decision-y-para-que-sirven/
+- [4] https://1library.co/article/algoritmo-graft-trabajar-distintos-atributos-lidiar-problemas-t%C3%ADpicos.zx52jowq
+- [5] https://www.researchgate.net/publication/338023179_J48_algorithms_of_machine_learning_for_predicting_user%27s_the_acceptance_of_an_E-orientation_systems
+- [6] https://docs.rapidminer.com/latest/studio/operators/modeling/predictive/trees/decision_stump.html
+- [7] https://link.springer.com/referenceworkentry/10.1007/978-0-387-30164-8_202
+- [8] https://www.cs.waikato.ac.nz/~ml/publications/2003/landwehr-etal.pdf
+- [9] http://www.irdindia.in/journal_ijaece/pdf/vol3_iss4/2.pdf
 
