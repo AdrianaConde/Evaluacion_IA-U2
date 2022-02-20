@@ -68,13 +68,13 @@ Etiquetas para el conjunto de datos de entrenamiento. Cada etiqueta pertenecient
 ## Arboles de Decision
 1. Abrimos la herramienta weka y seleccionamos la opcion Open File para poder cargar nuestro dataset.
 <!--Imagen--> 
-![image](https://raw.githubusercontent.com/andersonquizhpe/colabIA/main/imagenesML/abrirdata.png)
+![abrirdata](https://user-images.githubusercontent.com/40923800/154828958-4e31c28f-c6be-44f5-8cf7-518dbb8dca08.png)
+
 2.  Una vez abierto el dataset, nos dirigimos a la pestaña de Clasify
 3.  En la opción Choose escogemos el algoritmo que utilizaremos
 4.  Seleccionamos la variable que nos permitira clasificar los datos
-![image](https://raw.githubusercontent.com/andersonquizhpe/colabIA/main/imagenesML/Segundopaso.png)
+![Segundopaso](https://user-images.githubusercontent.com/40923800/154828995-ac41ec53-0d04-4db0-a57a-b966f04f54c9.png)
 
-5.  jb
 
 # Conclusión
 - 
