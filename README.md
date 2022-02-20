@@ -61,6 +61,11 @@ Los árboles modelo logísticos se basan en la idea anterior de un árbol modelo
 ### Random Tree
 Random Tree es un Clasificador supervisado; es un algoritmo de aprendizaje que genera conjuntos de aprendizajes individuales. Los árboles aleatorios son un grupo de predictores de árboles que se denomina bosque. Los mecanismos de clasificación son los siguientes: el clasificador de árboles aleatorios obtiene el vector de características de entrada, lo clasifica con cada árbol del bosque y genera la etiqueta de clase que recibió la mayoría de los "votos". Los árboles aleatorios son esencialmente la combinación de dos algoritmos existentes en el aprendizaje automático: los árboles modelo únicos se fusionan con modelos de bosques aleatorios.[9]
 
+# Comparación entre algoritmos
+![comparacion](https://user-images.githubusercontent.com/40923800/154867575-7390d553-62d9-4376-9d43-f168fd37861c.JPG)
+
+Como podemos observar en la tabla anterior, entre los algoritmos que clasifican con mayor precision se encuentra los algoritmos de RandomTree y el algoritmo J48, por lo que se decidio usar el algoritmo Random tree
+
 ## Clústers
 ### Kmeans
 El algoritmo de agrupación en clústeres de K-Means se define como un método de aprendizaje no supervisado que tiene un proceso iterativo en el que el conjunto de datos se agrupa en un número k de clústeres o subgrupos predefinidos que no se superponen, haciendo que los puntos internos del clúster sean lo más similares posible mientras se intenta mantener el agrupa en un espacio distinto.
