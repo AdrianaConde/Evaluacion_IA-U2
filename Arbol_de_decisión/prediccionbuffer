@@ -1,0 +1,740 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.trees.RandomTree -- -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     entreamiento-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    800
+Attributes:   27
+              chroma_stft
+              rmse
+              spectral_centroid
+              spectral_bandwidth
+              rolloff
+              zero_crossing_rate
+              mfcc1
+              mfcc2
+              mfcc3
+              mfcc4
+              mfcc5
+              mfcc6
+              mfcc7
+              mfcc8
+              mfcc9
+              mfcc10
+              mfcc11
+              mfcc12
+              mfcc13
+              mfcc14
+              mfcc15
+              mfcc16
+              mfcc17
+              mfcc18
+              mfcc19
+              mfcc20
+              label
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+
+RandomTree
+==========
+
+spectral_bandwidth < 2018.43
+|   rmse < 0.05
+|   |   mfcc9 < -13.49
+|   |   |   mfcc4 < 34.24
+|   |   |   |   chroma_stft < 0.25 : disco (1/0)
+|   |   |   |   chroma_stft >= 0.25
+|   |   |   |   |   spectral_centroid < 1723.45 : classical (1/0)
+|   |   |   |   |   spectral_centroid >= 1723.45 : reggae (1/0)
+|   |   |   mfcc4 >= 34.24 : jazz (3/0)
+|   |   mfcc9 >= -13.49
+|   |   |   spectral_bandwidth < 1532.38
+|   |   |   |   mfcc9 < 0.87 : classical (34/0)
+|   |   |   |   mfcc9 >= 0.87
+|   |   |   |   |   chroma_stft < 0.3 : classical (1/0)
+|   |   |   |   |   chroma_stft >= 0.3 : country (1/0)
+|   |   |   spectral_bandwidth >= 1532.38
+|   |   |   |   mfcc4 < 35.37 : classical (16/0)
+|   |   |   |   mfcc4 >= 35.37
+|   |   |   |   |   chroma_stft < 0.29
+|   |   |   |   |   |   mfcc14 < 3.16 : jazz (4/0)
+|   |   |   |   |   |   mfcc14 >= 3.16
+|   |   |   |   |   |   |   mfcc17 < 3.83 : classical (3/0)
+|   |   |   |   |   |   |   mfcc17 >= 3.83 : jazz (1/0)
+|   |   |   |   |   chroma_stft >= 0.29 : classical (3/0)
+|   rmse >= 0.05
+|   |   mfcc12 < 5.17
+|   |   |   zero_crossing_rate < 0.07
+|   |   |   |   mfcc5 < 2.95
+|   |   |   |   |   mfcc11 < -9.05
+|   |   |   |   |   |   mfcc4 < 12.89 : classical (2/0)
+|   |   |   |   |   |   mfcc4 >= 12.89
+|   |   |   |   |   |   |   mfcc14 < -6.91 : blues (3/0)
+|   |   |   |   |   |   |   mfcc14 >= -6.91
+|   |   |   |   |   |   |   |   mfcc15 < -9.28
+|   |   |   |   |   |   |   |   |   mfcc1 < -172.17 : jazz (1/0)
+|   |   |   |   |   |   |   |   |   mfcc1 >= -172.17 : country (1/0)
+|   |   |   |   |   |   |   |   mfcc15 >= -9.28 : country (7/0)
+|   |   |   |   |   mfcc11 >= -9.05
+|   |   |   |   |   |   rmse < 0.14
+|   |   |   |   |   |   |   mfcc10 < 3.45 : jazz (14/0)
+|   |   |   |   |   |   |   mfcc10 >= 3.45
+|   |   |   |   |   |   |   |   mfcc16 < -5.38 : blues (1/0)
+|   |   |   |   |   |   |   |   mfcc16 >= -5.38
+|   |   |   |   |   |   |   |   |   chroma_stft < 0.32
+|   |   |   |   |   |   |   |   |   |   spectral_centroid < 1481.93 : jazz (2/0)
+|   |   |   |   |   |   |   |   |   |   spectral_centroid >= 1481.93 : country (1/0)
+|   |   |   |   |   |   |   |   |   chroma_stft >= 0.32 : country (2/0)
+|   |   |   |   |   |   rmse >= 0.14
+|   |   |   |   |   |   |   rmse < 0.15 : country (1/0)
+|   |   |   |   |   |   |   rmse >= 0.15
+|   |   |   |   |   |   |   |   rolloff < 3150.79 : blues (2/0)
+|   |   |   |   |   |   |   |   rolloff >= 3150.79 : country (1/0)
+|   |   |   |   mfcc5 >= 2.95
+|   |   |   |   |   mfcc6 < 17.74
+|   |   |   |   |   |   mfcc2 < 145.57
+|   |   |   |   |   |   |   mfcc15 < -0.38
+|   |   |   |   |   |   |   |   spectral_bandwidth < 1585.49 : blues (1/0)
+|   |   |   |   |   |   |   |   spectral_bandwidth >= 1585.49 : country (3/0)
+|   |   |   |   |   |   |   mfcc15 >= -0.38
+|   |   |   |   |   |   |   |   chroma_stft < 0.35 : blues (6/0)
+|   |   |   |   |   |   |   |   chroma_stft >= 0.35 : reggae (1/0)
+|   |   |   |   |   |   mfcc2 >= 145.57
+|   |   |   |   |   |   |   mfcc11 < 0.94 : country (5/0)
+|   |   |   |   |   |   |   mfcc11 >= 0.94
+|   |   |   |   |   |   |   |   mfcc1 < -216.23 : jazz (1/0)
+|   |   |   |   |   |   |   |   mfcc1 >= -216.23 : reggae (1/0)
+|   |   |   |   |   mfcc6 >= 17.74 : blues (15/0)
+|   |   |   zero_crossing_rate >= 0.07
+|   |   |   |   mfcc17 < -4.91
+|   |   |   |   |   spectral_bandwidth < 1632.62
+|   |   |   |   |   |   mfcc7 < -5.06 : classical (2/0)
+|   |   |   |   |   |   mfcc7 >= -5.06
+|   |   |   |   |   |   |   zero_crossing_rate < 0.08 : blues (1/0)
+|   |   |   |   |   |   |   zero_crossing_rate >= 0.08 : rock (1/0)
+|   |   |   |   |   spectral_bandwidth >= 1632.62
+|   |   |   |   |   |   mfcc7 < -13.74 : hiphop (1/0)
+|   |   |   |   |   |   mfcc7 >= -13.74
+|   |   |   |   |   |   |   mfcc8 < 5.16 : country (5/0)
+|   |   |   |   |   |   |   mfcc8 >= 5.16
+|   |   |   |   |   |   |   |   rmse < 0.15 : country (1/0)
+|   |   |   |   |   |   |   |   rmse >= 0.15 : classical (1/0)
+|   |   |   |   mfcc17 >= -4.91
+|   |   |   |   |   mfcc8 < 1.25
+|   |   |   |   |   |   mfcc4 < 26.57 : classical (10/0)
+|   |   |   |   |   |   mfcc4 >= 26.57
+|   |   |   |   |   |   |   mfcc1 < -214.56
+|   |   |   |   |   |   |   |   rmse < 0.06 : reggae (1/0)
+|   |   |   |   |   |   |   |   rmse >= 0.06 : classical (2/0)
+|   |   |   |   |   |   |   mfcc1 >= -214.56 : jazz (2/0)
+|   |   |   |   |   mfcc8 >= 1.25
+|   |   |   |   |   |   mfcc18 < 0.94
+|   |   |   |   |   |   |   mfcc10 < -0.86 : rock (2/0)
+|   |   |   |   |   |   |   mfcc10 >= -0.86 : jazz (7/0)
+|   |   |   |   |   |   mfcc18 >= 0.94
+|   |   |   |   |   |   |   spectral_bandwidth < 1676.62 : reggae (1/0)
+|   |   |   |   |   |   |   spectral_bandwidth >= 1676.62
+|   |   |   |   |   |   |   |   spectral_centroid < 1816.98 : country (1/0)
+|   |   |   |   |   |   |   |   spectral_centroid >= 1816.98 : classical (1/0)
+|   |   mfcc12 >= 5.17
+|   |   |   mfcc1 < -110.46
+|   |   |   |   mfcc16 < 0.03
+|   |   |   |   |   mfcc2 < 132.38
+|   |   |   |   |   |   mfcc7 < -7.48 : rock (2/0)
+|   |   |   |   |   |   mfcc7 >= -7.48 : reggae (7/0)
+|   |   |   |   |   mfcc2 >= 132.38
+|   |   |   |   |   |   rmse < 0.1 : country (1/0)
+|   |   |   |   |   |   rmse >= 0.1 : blues (2/0)
+|   |   |   |   mfcc16 >= 0.03
+|   |   |   |   |   mfcc3 < -21.73
+|   |   |   |   |   |   mfcc6 < 19.35
+|   |   |   |   |   |   |   mfcc14 < 2.95
+|   |   |   |   |   |   |   |   rmse < 0.1 : jazz (1/0)
+|   |   |   |   |   |   |   |   rmse >= 0.1 : country (1/0)
+|   |   |   |   |   |   |   mfcc14 >= 2.95 : hiphop (2/0)
+|   |   |   |   |   |   mfcc6 >= 19.35
+|   |   |   |   |   |   |   rmse < 0.12 : rock (4/0)
+|   |   |   |   |   |   |   rmse >= 0.12 : metal (1/0)
+|   |   |   |   |   mfcc3 >= -21.73
+|   |   |   |   |   |   rmse < 0.09
+|   |   |   |   |   |   |   spectral_centroid < 1060.23 : jazz (1/0)
+|   |   |   |   |   |   |   spectral_centroid >= 1060.23
+|   |   |   |   |   |   |   |   rmse < 0.08 : country (1/0)
+|   |   |   |   |   |   |   |   rmse >= 0.08 : hiphop (1/0)
+|   |   |   |   |   |   rmse >= 0.09 : country (10/0)
+|   |   |   mfcc1 >= -110.46
+|   |   |   |   mfcc9 < -8.06
+|   |   |   |   |   mfcc8 < 22.61
+|   |   |   |   |   |   mfcc2 < 115.6 : blues (7/0)
+|   |   |   |   |   |   mfcc2 >= 115.6
+|   |   |   |   |   |   |   mfcc13 < -6.63
+|   |   |   |   |   |   |   |   mfcc12 < 7.03 : disco (1/0)
+|   |   |   |   |   |   |   |   mfcc12 >= 7.03 : country (4/0)
+|   |   |   |   |   |   |   mfcc13 >= -6.63 : blues (1/0)
+|   |   |   |   |   mfcc8 >= 22.61 : metal (3/0)
+|   |   |   |   mfcc9 >= -8.06
+|   |   |   |   |   chroma_stft < 0.44
+|   |   |   |   |   |   chroma_stft < 0.38 : classical (1/0)
+|   |   |   |   |   |   chroma_stft >= 0.38 : reggae (1/0)
+|   |   |   |   |   chroma_stft >= 0.44 : metal (3/0)
+spectral_bandwidth >= 2018.43
+|   mfcc11 < -6.9
+|   |   zero_crossing_rate < 0.13
+|   |   |   mfcc8 < 7.05
+|   |   |   |   mfcc3 < -9.62
+|   |   |   |   |   rolloff < 5209 : reggae (3/0)
+|   |   |   |   |   rolloff >= 5209 : pop (1/0)
+|   |   |   |   mfcc3 >= -9.62
+|   |   |   |   |   mfcc15 < -3.37
+|   |   |   |   |   |   rmse < 0.15 : country (3/0)
+|   |   |   |   |   |   rmse >= 0.15 : jazz (2/0)
+|   |   |   |   |   mfcc15 >= -3.37 : pop (3/0)
+|   |   |   mfcc8 >= 7.05
+|   |   |   |   chroma_stft < 0.43
+|   |   |   |   |   mfcc11 < -19.2 : blues (13/0)
+|   |   |   |   |   mfcc11 >= -19.2
+|   |   |   |   |   |   rmse < 0.1
+|   |   |   |   |   |   |   mfcc19 < -6.55
+|   |   |   |   |   |   |   |   mfcc15 < -8.29
+|   |   |   |   |   |   |   |   |   mfcc8 < 24.25 : rock (2/0)
+|   |   |   |   |   |   |   |   |   mfcc8 >= 24.25 : disco (2/0)
+|   |   |   |   |   |   |   |   mfcc15 >= -8.29 : rock (4/0)
+|   |   |   |   |   |   |   mfcc19 >= -6.55
+|   |   |   |   |   |   |   |   mfcc13 < -8.41
+|   |   |   |   |   |   |   |   |   mfcc18 < -2.03 : jazz (2/0)
+|   |   |   |   |   |   |   |   |   mfcc18 >= -2.03
+|   |   |   |   |   |   |   |   |   |   mfcc14 < 0.06 : rock (1/0)
+|   |   |   |   |   |   |   |   |   |   mfcc14 >= 0.06 : disco (6/0)
+|   |   |   |   |   |   |   |   mfcc13 >= -8.41 : jazz (6/0)
+|   |   |   |   |   |   rmse >= 0.1
+|   |   |   |   |   |   |   mfcc10 < 17.01
+|   |   |   |   |   |   |   |   mfcc16 < 1.88
+|   |   |   |   |   |   |   |   |   mfcc9 < -11.26
+|   |   |   |   |   |   |   |   |   |   mfcc15 < -11.26
+|   |   |   |   |   |   |   |   |   |   |   spectral_centroid < 1872.37 : country (1/0)
+|   |   |   |   |   |   |   |   |   |   |   spectral_centroid >= 1872.37 : metal (4/0)
+|   |   |   |   |   |   |   |   |   |   mfcc15 >= -11.26
+|   |   |   |   |   |   |   |   |   |   |   spectral_bandwidth < 2218.71 : rock (4/0)
+|   |   |   |   |   |   |   |   |   |   |   spectral_bandwidth >= 2218.71 : metal (1/0)
+|   |   |   |   |   |   |   |   |   mfcc9 >= -11.26
+|   |   |   |   |   |   |   |   |   |   spectral_bandwidth < 2070.69
+|   |   |   |   |   |   |   |   |   |   |   spectral_centroid < 1955.14 : reggae (1/0)
+|   |   |   |   |   |   |   |   |   |   |   spectral_centroid >= 1955.14 : metal (1/0)
+|   |   |   |   |   |   |   |   |   |   spectral_bandwidth >= 2070.69
+|   |   |   |   |   |   |   |   |   |   |   spectral_bandwidth < 2117.36 : disco (2/0)
+|   |   |   |   |   |   |   |   |   |   |   spectral_bandwidth >= 2117.36 : blues (1/0)
+|   |   |   |   |   |   |   |   mfcc16 >= 1.88
+|   |   |   |   |   |   |   |   |   mfcc3 < -24.44
+|   |   |   |   |   |   |   |   |   |   mfcc17 < -3.02 : blues (7/0)
+|   |   |   |   |   |   |   |   |   |   mfcc17 >= -3.02 : hiphop (1/0)
+|   |   |   |   |   |   |   |   |   mfcc3 >= -24.44
+|   |   |   |   |   |   |   |   |   |   mfcc12 < 7.92
+|   |   |   |   |   |   |   |   |   |   |   zero_crossing_rate < 0.12 : blues (5/0)
+|   |   |   |   |   |   |   |   |   |   |   zero_crossing_rate >= 0.12 : rock (1/0)
+|   |   |   |   |   |   |   |   |   |   mfcc12 >= 7.92
+|   |   |   |   |   |   |   |   |   |   |   mfcc15 < -6.37
+|   |   |   |   |   |   |   |   |   |   |   |   mfcc8 < 21.33 : country (9/0)
+|   |   |   |   |   |   |   |   |   |   |   |   mfcc8 >= 21.33 : disco (3/0)
+|   |   |   |   |   |   |   |   |   |   |   mfcc15 >= -6.37
+|   |   |   |   |   |   |   |   |   |   |   |   zero_crossing_rate < 0.1
+|   |   |   |   |   |   |   |   |   |   |   |   |   mfcc1 < -83.13 : rock (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   mfcc1 >= -83.13 : country (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   zero_crossing_rate >= 0.1 : blues (3/0)
+|   |   |   |   |   |   |   mfcc10 >= 17.01
+|   |   |   |   |   |   |   |   mfcc4 < 37.02 : disco (5/0)
+|   |   |   |   |   |   |   |   mfcc4 >= 37.02
+|   |   |   |   |   |   |   |   |   mfcc9 < -16.92
+|   |   |   |   |   |   |   |   |   |   zero_crossing_rate < 0.1 : country (1/0)
+|   |   |   |   |   |   |   |   |   |   zero_crossing_rate >= 0.1 : rock (3/0)
+|   |   |   |   |   |   |   |   |   mfcc9 >= -16.92
+|   |   |   |   |   |   |   |   |   |   rolloff < 5070.34 : reggae (2/0)
+|   |   |   |   |   |   |   |   |   |   rolloff >= 5070.34
+|   |   |   |   |   |   |   |   |   |   |   zero_crossing_rate < 0.11 : rock (1/0)
+|   |   |   |   |   |   |   |   |   |   |   zero_crossing_rate >= 0.11 : disco (1/0)
+|   |   |   |   chroma_stft >= 0.43
+|   |   |   |   |   mfcc4 < 52.67
+|   |   |   |   |   |   rmse < 0.13
+|   |   |   |   |   |   |   mfcc16 < 5.46
+|   |   |   |   |   |   |   |   mfcc10 < 18.76 : disco (5/0)
+|   |   |   |   |   |   |   |   mfcc10 >= 18.76
+|   |   |   |   |   |   |   |   |   spectral_centroid < 2330.26 : disco (1/0)
+|   |   |   |   |   |   |   |   |   spectral_centroid >= 2330.26 : hiphop (1/0)
+|   |   |   |   |   |   |   mfcc16 >= 5.46 : hiphop (4/0)
+|   |   |   |   |   |   rmse >= 0.13
+|   |   |   |   |   |   |   mfcc14 < 10.26
+|   |   |   |   |   |   |   |   mfcc7 < -17.41 : hiphop (2/0)
+|   |   |   |   |   |   |   |   mfcc7 >= -17.41 : rock (4/0)
+|   |   |   |   |   |   |   mfcc14 >= 10.26
+|   |   |   |   |   |   |   |   zero_crossing_rate < 0.1 : reggae (1/0)
+|   |   |   |   |   |   |   |   zero_crossing_rate >= 0.1 : metal (1/0)
+|   |   |   |   |   mfcc4 >= 52.67
+|   |   |   |   |   |   mfcc6 < 30.12 : metal (9/0)
+|   |   |   |   |   |   mfcc6 >= 30.12
+|   |   |   |   |   |   |   mfcc4 < 53.44 : disco (1/0)
+|   |   |   |   |   |   |   mfcc4 >= 53.44 : blues (1/0)
+|   |   zero_crossing_rate >= 0.13
+|   |   |   mfcc8 < 15.27
+|   |   |   |   spectral_bandwidth < 2249.61
+|   |   |   |   |   chroma_stft < 0.42 : rock (4/0)
+|   |   |   |   |   chroma_stft >= 0.42 : disco (2/0)
+|   |   |   |   spectral_bandwidth >= 2249.61
+|   |   |   |   |   mfcc5 < -27.23 : blues (5/0)
+|   |   |   |   |   mfcc5 >= -27.23
+|   |   |   |   |   |   mfcc13 < -5.98
+|   |   |   |   |   |   |   mfcc1 < -162.83 : metal (1/0)
+|   |   |   |   |   |   |   mfcc1 >= -162.83 : disco (2/0)
+|   |   |   |   |   |   mfcc13 >= -5.98
+|   |   |   |   |   |   |   rolloff < 5854.74 : classical (1/0)
+|   |   |   |   |   |   |   rolloff >= 5854.74 : pop (2/0)
+|   |   |   mfcc8 >= 15.27
+|   |   |   |   mfcc9 < -15.72
+|   |   |   |   |   mfcc7 < -15.31
+|   |   |   |   |   |   chroma_stft < 0.4 : rock (6/0)
+|   |   |   |   |   |   chroma_stft >= 0.4
+|   |   |   |   |   |   |   mfcc9 < -20.85
+|   |   |   |   |   |   |   |   mfcc4 < 52.34 : rock (3/0)
+|   |   |   |   |   |   |   |   mfcc4 >= 52.34 : jazz (1/0)
+|   |   |   |   |   |   |   mfcc9 >= -20.85
+|   |   |   |   |   |   |   |   mfcc5 < -20.33
+|   |   |   |   |   |   |   |   |   spectral_centroid < 2640.09 : metal (2/0)
+|   |   |   |   |   |   |   |   |   spectral_centroid >= 2640.09 : disco (1/0)
+|   |   |   |   |   |   |   |   mfcc5 >= -20.33
+|   |   |   |   |   |   |   |   |   mfcc13 < -5.26 : disco (9/0)
+|   |   |   |   |   |   |   |   |   mfcc13 >= -5.26 : hiphop (1/0)
+|   |   |   |   |   mfcc7 >= -15.31
+|   |   |   |   |   |   zero_crossing_rate < 0.14 : disco (2/0)
+|   |   |   |   |   |   zero_crossing_rate >= 0.14
+|   |   |   |   |   |   |   mfcc4 < 48.27 : disco (1/0)
+|   |   |   |   |   |   |   mfcc4 >= 48.27 : metal (8/0)
+|   |   |   |   mfcc9 >= -15.72
+|   |   |   |   |   mfcc1 < -52.12
+|   |   |   |   |   |   chroma_stft < 0.43
+|   |   |   |   |   |   |   chroma_stft < 0.41
+|   |   |   |   |   |   |   |   rmse < 0.09
+|   |   |   |   |   |   |   |   |   rmse < 0.09 : rock (1/0)
+|   |   |   |   |   |   |   |   |   rmse >= 0.09 : metal (2/0)
+|   |   |   |   |   |   |   |   rmse >= 0.09
+|   |   |   |   |   |   |   |   |   mfcc2 < 92.21 : blues (3/0)
+|   |   |   |   |   |   |   |   |   mfcc2 >= 92.21
+|   |   |   |   |   |   |   |   |   |   mfcc6 < 26.32 : disco (2/0)
+|   |   |   |   |   |   |   |   |   |   mfcc6 >= 26.32 : rock (2/0)
+|   |   |   |   |   |   |   chroma_stft >= 0.41 : disco (4/0)
+|   |   |   |   |   |   chroma_stft >= 0.43
+|   |   |   |   |   |   |   rmse < 0.11 : metal (13/0)
+|   |   |   |   |   |   |   rmse >= 0.11
+|   |   |   |   |   |   |   |   mfcc9 < -11.46
+|   |   |   |   |   |   |   |   |   zero_crossing_rate < 0.16 : metal (6/0)
+|   |   |   |   |   |   |   |   |   zero_crossing_rate >= 0.16 : blues (1/0)
+|   |   |   |   |   |   |   |   mfcc9 >= -11.46
+|   |   |   |   |   |   |   |   |   rmse < 0.12 : hiphop (2/0)
+|   |   |   |   |   |   |   |   |   rmse >= 0.12 : blues (1/0)
+|   |   |   |   |   mfcc1 >= -52.12 : metal (24/0)
+|   mfcc11 >= -6.9
+|   |   rmse < 0.19
+|   |   |   mfcc14 < 0.97
+|   |   |   |   spectral_bandwidth < 2284.37
+|   |   |   |   |   mfcc4 < 28.74
+|   |   |   |   |   |   mfcc3 < -3.12
+|   |   |   |   |   |   |   spectral_bandwidth < 2250.71 : jazz (3/0)
+|   |   |   |   |   |   |   spectral_bandwidth >= 2250.71 : classical (1/0)
+|   |   |   |   |   |   mfcc3 >= -3.12
+|   |   |   |   |   |   |   rmse < 0.11 : classical (1/0)
+|   |   |   |   |   |   |   rmse >= 0.11 : rock (2/0)
+|   |   |   |   |   mfcc4 >= 28.74
+|   |   |   |   |   |   mfcc8 < 8.14
+|   |   |   |   |   |   |   rmse < 0.11 : country (4/0)
+|   |   |   |   |   |   |   rmse >= 0.11
+|   |   |   |   |   |   |   |   rmse < 0.12 : reggae (2/0)
+|   |   |   |   |   |   |   |   rmse >= 0.12 : country (1/0)
+|   |   |   |   |   |   mfcc8 >= 8.14
+|   |   |   |   |   |   |   chroma_stft < 0.35 : jazz (2/0)
+|   |   |   |   |   |   |   chroma_stft >= 0.35 : hiphop (2/0)
+|   |   |   |   spectral_bandwidth >= 2284.37
+|   |   |   |   |   mfcc1 < -83.54
+|   |   |   |   |   |   mfcc13 < -2.11
+|   |   |   |   |   |   |   mfcc5 < -0.49
+|   |   |   |   |   |   |   |   rolloff < 5191.31 : disco (2/0)
+|   |   |   |   |   |   |   |   rolloff >= 5191.31
+|   |   |   |   |   |   |   |   |   mfcc13 < -5.07 : rock (2/0)
+|   |   |   |   |   |   |   |   |   mfcc13 >= -5.07 : hiphop (1/0)
+|   |   |   |   |   |   |   mfcc5 >= -0.49
+|   |   |   |   |   |   |   |   mfcc2 < 93.48
+|   |   |   |   |   |   |   |   |   mfcc10 < -1.98
+|   |   |   |   |   |   |   |   |   |   mfcc12 < -5.04 : reggae (2/0)
+|   |   |   |   |   |   |   |   |   |   mfcc12 >= -5.04 : rock (2/0)
+|   |   |   |   |   |   |   |   |   mfcc10 >= -1.98
+|   |   |   |   |   |   |   |   |   |   mfcc19 < -3.15 : country (3/0)
+|   |   |   |   |   |   |   |   |   |   mfcc19 >= -3.15
+|   |   |   |   |   |   |   |   |   |   |   chroma_stft < 0.37
+|   |   |   |   |   |   |   |   |   |   |   |   spectral_bandwidth < 2611.15
+|   |   |   |   |   |   |   |   |   |   |   |   |   mfcc4 < 24.84 : disco (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   mfcc4 >= 24.84 : reggae (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   spectral_bandwidth >= 2611.15
+|   |   |   |   |   |   |   |   |   |   |   |   |   rmse < 0.12 : country (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   rmse >= 0.12 : pop (1/0)
+|   |   |   |   |   |   |   |   |   |   |   chroma_stft >= 0.37 : reggae (4/0)
+|   |   |   |   |   |   |   |   mfcc2 >= 93.48
+|   |   |   |   |   |   |   |   |   mfcc18 < -2.73
+|   |   |   |   |   |   |   |   |   |   mfcc5 < 13.15 : pop (4/0)
+|   |   |   |   |   |   |   |   |   |   mfcc5 >= 13.15 : rock (1/0)
+|   |   |   |   |   |   |   |   |   mfcc18 >= -2.73
+|   |   |   |   |   |   |   |   |   |   zero_crossing_rate < 0.04 : country (1/0)
+|   |   |   |   |   |   |   |   |   |   zero_crossing_rate >= 0.04
+|   |   |   |   |   |   |   |   |   |   |   chroma_stft < 0.33 : rock (1/0)
+|   |   |   |   |   |   |   |   |   |   |   chroma_stft >= 0.33 : disco (1/0)
+|   |   |   |   |   |   mfcc13 >= -2.11
+|   |   |   |   |   |   |   mfcc6 < 8.46
+|   |   |   |   |   |   |   |   mfcc14 < -1.05
+|   |   |   |   |   |   |   |   |   mfcc10 < 1.58
+|   |   |   |   |   |   |   |   |   |   mfcc2 < 110.9
+|   |   |   |   |   |   |   |   |   |   |   rmse < 0.13 : jazz (5/0)
+|   |   |   |   |   |   |   |   |   |   |   rmse >= 0.13 : pop (1/0)
+|   |   |   |   |   |   |   |   |   |   mfcc2 >= 110.9 : rock (2/0)
+|   |   |   |   |   |   |   |   |   mfcc10 >= 1.58
+|   |   |   |   |   |   |   |   |   |   spectral_centroid < 2539.69 : country (3/0)
+|   |   |   |   |   |   |   |   |   |   spectral_centroid >= 2539.69
+|   |   |   |   |   |   |   |   |   |   |   mfcc5 < 4.67 : hiphop (3/0)
+|   |   |   |   |   |   |   |   |   |   |   mfcc5 >= 4.67 : country (2/0)
+|   |   |   |   |   |   |   |   mfcc14 >= -1.05
+|   |   |   |   |   |   |   |   |   mfcc14 < -0.13
+|   |   |   |   |   |   |   |   |   |   mfcc1 < -114.12
+|   |   |   |   |   |   |   |   |   |   |   zero_crossing_rate < 0.11 : jazz (1/0)
+|   |   |   |   |   |   |   |   |   |   |   zero_crossing_rate >= 0.11 : disco (1/0)
+|   |   |   |   |   |   |   |   |   |   mfcc1 >= -114.12 : pop (4/0)
+|   |   |   |   |   |   |   |   |   mfcc14 >= -0.13
+|   |   |   |   |   |   |   |   |   |   mfcc11 < -0.25 : hiphop (1/0)
+|   |   |   |   |   |   |   |   |   |   mfcc11 >= -0.25 : jazz (5/0)
+|   |   |   |   |   |   |   mfcc6 >= 8.46
+|   |   |   |   |   |   |   |   chroma_stft < 0.47
+|   |   |   |   |   |   |   |   |   mfcc9 < 1.68
+|   |   |   |   |   |   |   |   |   |   mfcc18 < -1.36
+|   |   |   |   |   |   |   |   |   |   |   chroma_stft < 0.36 : rock (1/0)
+|   |   |   |   |   |   |   |   |   |   |   chroma_stft >= 0.36 : reggae (2/0)
+|   |   |   |   |   |   |   |   |   |   mfcc18 >= -1.36 : rock (3/0)
+|   |   |   |   |   |   |   |   |   mfcc9 >= 1.68 : reggae (5/0)
+|   |   |   |   |   |   |   |   chroma_stft >= 0.47 : hiphop (2/0)
+|   |   |   |   |   mfcc1 >= -83.54
+|   |   |   |   |   |   mfcc7 < 0.3
+|   |   |   |   |   |   |   mfcc10 < 1.88
+|   |   |   |   |   |   |   |   mfcc7 < -1 : jazz (2/0)
+|   |   |   |   |   |   |   |   mfcc7 >= -1 : reggae (2/0)
+|   |   |   |   |   |   |   mfcc10 >= 1.88
+|   |   |   |   |   |   |   |   chroma_stft < 0.38
+|   |   |   |   |   |   |   |   |   spectral_centroid < 2602.73 : rock (1/0)
+|   |   |   |   |   |   |   |   |   spectral_centroid >= 2602.73 : country (1/0)
+|   |   |   |   |   |   |   |   chroma_stft >= 0.38 : disco (2/0)
+|   |   |   |   |   |   mfcc7 >= 0.3
+|   |   |   |   |   |   |   mfcc8 < -0.19
+|   |   |   |   |   |   |   |   mfcc3 < 7.12 : disco (3/0)
+|   |   |   |   |   |   |   |   mfcc3 >= 7.12 : pop (2/0)
+|   |   |   |   |   |   |   mfcc8 >= -0.19
+|   |   |   |   |   |   |   |   mfcc8 < 1.54 : rock (5/0)
+|   |   |   |   |   |   |   |   mfcc8 >= 1.54
+|   |   |   |   |   |   |   |   |   mfcc17 < -0.66
+|   |   |   |   |   |   |   |   |   |   mfcc13 < 1.86
+|   |   |   |   |   |   |   |   |   |   |   mfcc7 < 3.65
+|   |   |   |   |   |   |   |   |   |   |   |   mfcc1 < -68.58 : disco (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   mfcc1 >= -68.58 : rock (4/0)
+|   |   |   |   |   |   |   |   |   |   |   mfcc7 >= 3.65
+|   |   |   |   |   |   |   |   |   |   |   |   mfcc10 < 1.53 : disco (5/0)
+|   |   |   |   |   |   |   |   |   |   |   |   mfcc10 >= 1.53 : rock (1/0)
+|   |   |   |   |   |   |   |   |   |   mfcc13 >= 1.86 : hiphop (2/0)
+|   |   |   |   |   |   |   |   |   mfcc17 >= -0.66
+|   |   |   |   |   |   |   |   |   |   mfcc15 < -3.29 : jazz (1/0)
+|   |   |   |   |   |   |   |   |   |   mfcc15 >= -3.29 : disco (4/0)
+|   |   |   mfcc14 >= 0.97
+|   |   |   |   mfcc1 < -123.24
+|   |   |   |   |   mfcc6 < 6.88
+|   |   |   |   |   |   chroma_stft < 0.35 : jazz (5/0)
+|   |   |   |   |   |   chroma_stft >= 0.35
+|   |   |   |   |   |   |   mfcc2 < 72.79 : jazz (1/0)
+|   |   |   |   |   |   |   mfcc2 >= 72.79
+|   |   |   |   |   |   |   |   mfcc6 < 4.82 : reggae (4/0)
+|   |   |   |   |   |   |   |   mfcc6 >= 4.82 : country (1/0)
+|   |   |   |   |   mfcc6 >= 6.88
+|   |   |   |   |   |   mfcc7 < -12.42
+|   |   |   |   |   |   |   chroma_stft < 0.29 : jazz (1/0)
+|   |   |   |   |   |   |   chroma_stft >= 0.29
+|   |   |   |   |   |   |   |   rmse < 0.12 : disco (1/0)
+|   |   |   |   |   |   |   |   rmse >= 0.12 : rock (1/0)
+|   |   |   |   |   |   mfcc7 >= -12.42
+|   |   |   |   |   |   |   mfcc4 < 29.46
+|   |   |   |   |   |   |   |   chroma_stft < 0.44
+|   |   |   |   |   |   |   |   |   spectral_bandwidth < 2653.95
+|   |   |   |   |   |   |   |   |   |   spectral_centroid < 1945.4 : rock (1/0)
+|   |   |   |   |   |   |   |   |   |   spectral_centroid >= 1945.4 : reggae (1/0)
+|   |   |   |   |   |   |   |   |   spectral_bandwidth >= 2653.95 : jazz (2/0)
+|   |   |   |   |   |   |   |   chroma_stft >= 0.44
+|   |   |   |   |   |   |   |   |   mfcc1 < -137.66 : hiphop (4/0)
+|   |   |   |   |   |   |   |   |   mfcc1 >= -137.66 : reggae (1/0)
+|   |   |   |   |   |   |   mfcc4 >= 29.46
+|   |   |   |   |   |   |   |   mfcc10 < 10.46
+|   |   |   |   |   |   |   |   |   mfcc3 < 22.8 : reggae (13/0)
+|   |   |   |   |   |   |   |   |   mfcc3 >= 22.8 : disco (1/0)
+|   |   |   |   |   |   |   |   mfcc10 >= 10.46
+|   |   |   |   |   |   |   |   |   spectral_bandwidth < 2192.87
+|   |   |   |   |   |   |   |   |   |   mfcc8 < 13.53 : hiphop (1/0)
+|   |   |   |   |   |   |   |   |   |   mfcc8 >= 13.53 : reggae (9/0)
+|   |   |   |   |   |   |   |   |   spectral_bandwidth >= 2192.87 : hiphop (7/0)
+|   |   |   |   mfcc1 >= -123.24
+|   |   |   |   |   mfcc18 < -1.32
+|   |   |   |   |   |   mfcc16 < -1.66 : rock (2/0)
+|   |   |   |   |   |   mfcc16 >= -1.66
+|   |   |   |   |   |   |   chroma_stft < 0.47 : reggae (1/0)
+|   |   |   |   |   |   |   chroma_stft >= 0.47 : metal (1/0)
+|   |   |   |   |   mfcc18 >= -1.32
+|   |   |   |   |   |   rolloff < 4667.86
+|   |   |   |   |   |   |   mfcc11 < -5.19
+|   |   |   |   |   |   |   |   mfcc1 < -98.41 : country (1/0)
+|   |   |   |   |   |   |   |   mfcc1 >= -98.41 : blues (1/0)
+|   |   |   |   |   |   |   mfcc11 >= -5.19 : disco (2/0)
+|   |   |   |   |   |   rolloff >= 4667.86
+|   |   |   |   |   |   |   mfcc15 < 2.78
+|   |   |   |   |   |   |   |   mfcc12 < 2.39
+|   |   |   |   |   |   |   |   |   spectral_bandwidth < 3053.37
+|   |   |   |   |   |   |   |   |   |   mfcc1 < -71.5 : reggae (1/0)
+|   |   |   |   |   |   |   |   |   |   mfcc1 >= -71.5 : pop (1/0)
+|   |   |   |   |   |   |   |   |   spectral_bandwidth >= 3053.37 : disco (2/0)
+|   |   |   |   |   |   |   |   mfcc12 >= 2.39
+|   |   |   |   |   |   |   |   |   spectral_centroid < 2484.16
+|   |   |   |   |   |   |   |   |   |   chroma_stft < 0.47 : disco (2/0)
+|   |   |   |   |   |   |   |   |   |   chroma_stft >= 0.47 : hiphop (1/0)
+|   |   |   |   |   |   |   |   |   spectral_centroid >= 2484.16 : hiphop (8/0)
+|   |   |   |   |   |   |   mfcc15 >= 2.78
+|   |   |   |   |   |   |   |   rmse < 0.16 : pop (1/0)
+|   |   |   |   |   |   |   |   rmse >= 0.16 : reggae (3/0)
+|   |   rmse >= 0.19
+|   |   |   mfcc9 < 0.5
+|   |   |   |   chroma_stft < 0.39
+|   |   |   |   |   mfcc9 < -2.72 : jazz (3/0)
+|   |   |   |   |   mfcc9 >= -2.72
+|   |   |   |   |   |   mfcc15 < 0.1
+|   |   |   |   |   |   |   spectral_centroid < 2637.25 : rock (1/0)
+|   |   |   |   |   |   |   spectral_centroid >= 2637.25 : pop (1/0)
+|   |   |   |   |   |   mfcc15 >= 0.1 : reggae (2/0)
+|   |   |   |   chroma_stft >= 0.39
+|   |   |   |   |   mfcc20 < 0.72
+|   |   |   |   |   |   mfcc1 < -9.84
+|   |   |   |   |   |   |   mfcc11 < -2.65
+|   |   |   |   |   |   |   |   mfcc3 < -14.81 : hiphop (1/0)
+|   |   |   |   |   |   |   |   mfcc3 >= -14.81 : rock (1/0)
+|   |   |   |   |   |   |   mfcc11 >= -2.65 : hiphop (14/0)
+|   |   |   |   |   |   mfcc1 >= -9.84
+|   |   |   |   |   |   |   mfcc2 < 70.72 : rock (1/0)
+|   |   |   |   |   |   |   mfcc2 >= 70.72 : pop (1/0)
+|   |   |   |   |   mfcc20 >= 0.72
+|   |   |   |   |   |   rmse < 0.2
+|   |   |   |   |   |   |   spectral_centroid < 3185.88 : jazz (1/0)
+|   |   |   |   |   |   |   spectral_centroid >= 3185.88 : pop (2/0)
+|   |   |   |   |   |   rmse >= 0.2
+|   |   |   |   |   |   |   zero_crossing_rate < 0.12 : disco (1/0)
+|   |   |   |   |   |   |   zero_crossing_rate >= 0.12 : rock (2/0)
+|   |   |   mfcc9 >= 0.5
+|   |   |   |   mfcc6 < 11.27
+|   |   |   |   |   rolloff < 6809.12
+|   |   |   |   |   |   mfcc17 < -3.77 : hiphop (4/0)
+|   |   |   |   |   |   mfcc17 >= -3.77
+|   |   |   |   |   |   |   mfcc6 < 4.91 : pop (12/0)
+|   |   |   |   |   |   |   mfcc6 >= 4.91
+|   |   |   |   |   |   |   |   mfcc12 < 3.6 : pop (4/0)
+|   |   |   |   |   |   |   |   mfcc12 >= 3.6 : hiphop (4/0)
+|   |   |   |   |   rolloff >= 6809.12
+|   |   |   |   |   |   spectral_centroid < 4295.24
+|   |   |   |   |   |   |   mfcc9 < 1.56
+|   |   |   |   |   |   |   |   chroma_stft < 0.46 : pop (1/0)
+|   |   |   |   |   |   |   |   chroma_stft >= 0.46 : reggae (1/0)
+|   |   |   |   |   |   |   mfcc9 >= 1.56 : pop (35/0)
+|   |   |   |   |   |   spectral_centroid >= 4295.24 : reggae (1/0)
+|   |   |   |   mfcc6 >= 11.27
+|   |   |   |   |   mfcc19 < -2.03 : hiphop (7/0)
+|   |   |   |   |   mfcc19 >= -2.03
+|   |   |   |   |   |   zero_crossing_rate < 0.1 : reggae (5/0)
+|   |   |   |   |   |   zero_crossing_rate >= 0.1
+|   |   |   |   |   |   |   chroma_stft < 0.43 : pop (2/0)
+|   |   |   |   |   |   |   chroma_stft >= 0.43
+|   |   |   |   |   |   |   |   mfcc1 < -62.62 : hiphop (2/0)
+|   |   |   |   |   |   |   |   mfcc1 >= -62.62
+|   |   |   |   |   |   |   |   |   rmse < 0.24 : hiphop (1/0)
+|   |   |   |   |   |   |   |   |   rmse >= 0.24 : pop (2/0)
+
+Size of the tree : 519
+Attribute mappings:
+
+Model attributes              	    Incoming attributes
+------------------------------	    ----------------
+(numeric) chroma_stft         	--> 2 (numeric) chroma_stft
+(numeric) rmse                	--> 3 (numeric) rmse
+(numeric) spectral_centroid   	--> 4 (numeric) spectral_centroid
+(numeric) spectral_bandwidth  	--> 5 (numeric) spectral_bandwidth
+(numeric) rolloff             	--> 6 (numeric) rolloff
+(numeric) zero_crossing_rate  	--> 7 (numeric) zero_crossing_rate
+(numeric) mfcc1               	--> 8 (numeric) mfcc1
+(numeric) mfcc2               	--> 9 (numeric) mfcc2
+(numeric) mfcc3               	--> 10 (numeric) mfcc3
+(numeric) mfcc4               	--> 11 (numeric) mfcc4
+(numeric) mfcc5               	--> 12 (numeric) mfcc5
+(numeric) mfcc6               	--> 13 (numeric) mfcc6
+(numeric) mfcc7               	--> 14 (numeric) mfcc7
+(numeric) mfcc8               	--> 15 (numeric) mfcc8
+(numeric) mfcc9               	--> 16 (numeric) mfcc9
+(numeric) mfcc10              	--> 17 (numeric) mfcc10
+(numeric) mfcc11              	--> 18 (numeric) mfcc11
+(numeric) mfcc12              	--> 19 (numeric) mfcc12
+(numeric) mfcc13              	--> 20 (numeric) mfcc13
+(numeric) mfcc14              	--> 21 (numeric) mfcc14
+(numeric) mfcc15              	--> 22 (numeric) mfcc15
+(numeric) mfcc16              	--> 23 (numeric) mfcc16
+(numeric) mfcc17              	--> 24 (numeric) mfcc17
+(numeric) mfcc18              	--> 25 (numeric) mfcc18
+(numeric) mfcc19              	--> 26 (numeric) mfcc19
+(numeric) mfcc20              	--> 27 (numeric) mfcc20
+(nominal) label               	--> 28 missing (type mis-match)
+
+
+Time taken to build model: 0.03 seconds
+
+=== Predictions on test set ===
+
+    inst#     actual  predicted error prediction
+        1        1:?  3:country       1 
+        2        1:?   9:reggae       1 
+        3        1:?    4:disco       1 
+        4        1:?  3:country       1 
+        5        1:?   5:hiphop       1 
+        6        1:?    10:rock       1 
+        7        1:? 2:classical       1 
+        8        1:?    1:blues       1 
+        9        1:?  3:country       1 
+       10        1:?     6:jazz       1 
+       11        1:?  3:country       1 
+       12        1:?  3:country       1 
+       13        1:?    1:blues       1 
+       14        1:?    1:blues       1 
+       15        1:?    1:blues       1 
+       16        1:?  3:country       1 
+       17        1:?    1:blues       1 
+       18        1:?    1:blues       1 
+       19        1:?   5:hiphop       1 
+       20        1:?    1:blues       1 
+       21        1:? 2:classical       1 
+       22        1:? 2:classical       1 
+       23        1:? 2:classical       1 
+       24        1:? 2:classical       1 
+       25        1:? 2:classical       1 
+       26        1:?     6:jazz       1 
+       27        1:? 2:classical       1 
+       28        1:? 2:classical       1 
+       29        1:?     6:jazz       1 
+       30        1:?     6:jazz       1 
+       31        1:? 2:classical       1 
+       32        1:? 2:classical       1 
+       33        1:? 2:classical       1 
+       34        1:? 2:classical       1 
+       35        1:? 2:classical       1 
+       36        1:? 2:classical       1 
+       37        1:? 2:classical       1 
+       38        1:? 2:classical       1 
+       39        1:? 2:classical       1 
+       40        1:? 2:classical       1 
+       41        1:?      8:pop       1 
+       42        1:?   5:hiphop       1 
+       43        1:?   9:reggae       1 
+       44        1:?     6:jazz       1 
+       45        1:?   5:hiphop       1 
+       46        1:?   5:hiphop       1 
+       47        1:?   5:hiphop       1 
+       48        1:?   5:hiphop       1 
+       49        1:?   5:hiphop       1 
+       50        1:?      8:pop       1 
+       51        1:?  3:country       1 
+       52        1:?  3:country       1 
+       53        1:?    10:rock       1 
+       54        1:?  3:country       1 
+       55        1:?  3:country       1 
+       56        1:?    1:blues       1 
+       57        1:?     6:jazz       1 
+       58        1:?     6:jazz       1 
+       59        1:?   9:reggae       1 
+       60        1:?  3:country       1 
+       61        1:?    4:disco       1 
+       62        1:?     6:jazz       1 
+       63        1:?    10:rock       1 
+       64        1:?   5:hiphop       1 
+       65        1:?   5:hiphop       1 
+       66        1:?   5:hiphop       1 
+       67        1:?   5:hiphop       1 
+       68        1:?    4:disco       1 
+       69        1:?     6:jazz       1 
+       70        1:?     6:jazz       1 
+       71        1:?    10:rock       1 
+       72        1:?   9:reggae       1 
+       73        1:?   5:hiphop       1 
+       74        1:?    4:disco       1 
+       75        1:?    10:rock       1 
+       76        1:?   5:hiphop       1 
+       77        1:?   5:hiphop       1 
+       78        1:?   9:reggae       1 
+       79        1:?   5:hiphop       1 
+       80        1:?     6:jazz       1 
+       81        1:?    4:disco       1 
+       82        1:?   5:hiphop       1 
+       83        1:?  3:country       1 
+       84        1:?   5:hiphop       1 
+       85        1:?     6:jazz       1 
+       86        1:?    4:disco       1 
+       87        1:?    1:blues       1 
+       88        1:?    10:rock       1 
+       89        1:?    4:disco       1 
+       90        1:?    4:disco       1 
+       91        1:?    4:disco       1 
+       92        1:?    10:rock       1 
+       93        1:?   9:reggae       1 
+       94        1:?    1:blues       1 
+       95        1:?    7:metal       1 
+       96        1:?    1:blues       1 
+       97        1:?    4:disco       1 
+       98        1:?    10:rock       1 
+       99        1:?    7:metal       1 
+      100        1:?    10:rock       1 
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.21 seconds
+
+=== Summary ===
+
+Total Number of Instances                0     
+Ignored Class Unknown Instances                100     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 ?        ?        ?          ?        ?          ?        ?         ?         blues
+                 ?        ?        ?          ?        ?          ?        ?         ?         classical
+                 ?        ?        ?          ?        ?          ?        ?         ?         country
+                 ?        ?        ?          ?        ?          ?        ?         ?         disco
+                 ?        ?        ?          ?        ?          ?        ?         ?         hiphop
+                 ?        ?        ?          ?        ?          ?        ?         ?         jazz
+                 ?        ?        ?          ?        ?          ?        ?         ?         metal
+                 ?        ?        ?          ?        ?          ?        ?         ?         pop
+                 ?        ?        ?          ?        ?          ?        ?         ?         reggae
+                 ?        ?        ?          ?        ?          ?        ?         ?         rock
+Weighted Avg.    ?        ?        ?          ?        ?          ?        ?         ?         
+
+=== Confusion Matrix ===
+
+ a b c d e f g h i j   <-- classified as
+ 0 0 0 0 0 0 0 0 0 0 | a = blues
+ 0 0 0 0 0 0 0 0 0 0 | b = classical
+ 0 0 0 0 0 0 0 0 0 0 | c = country
+ 0 0 0 0 0 0 0 0 0 0 | d = disco
+ 0 0 0 0 0 0 0 0 0 0 | e = hiphop
+ 0 0 0 0 0 0 0 0 0 0 | f = jazz
+ 0 0 0 0 0 0 0 0 0 0 | g = metal
+ 0 0 0 0 0 0 0 0 0 0 | h = pop
+ 0 0 0 0 0 0 0 0 0 0 | i = reggae
+ 0 0 0 0 0 0 0 0 0 0 | j = rock
+
