@@ -6,11 +6,11 @@ from sklearn.decomposition import PCA
 
 # Variables
 k = 3 # -> numero de clusters(agrupamientos)
-path_csv = ''
+path_csv = '../Arbol_de_decisión/'
 name_entrenamiento = 'entreamiento.csv'
 name_prueba = 'test.csv'
-dataset_entrenamiento = name_entrenamiento
-dataset_prueba = name_prueba
+dataset_entrenamiento = path_csv + name_entrenamiento
+dataset_prueba = path_csv + name_prueba
 
 # Asignacion del dataset a la variable datos
 datos = pd.read_csv(dataset_entrenamiento)
@@ -24,8 +24,8 @@ print('Dimensiones del archivo de pruebas -> ', name_prueba,':\n', datosp.shape)
 print("-------------------------")
 
 # Se extrae los valores del dataset de entrenamiento y pruebas a un array
-x = datos.iloc[:,1:26].values
-y = datosp.iloc[:,1:26].values
+x = datos.iloc[:,1:27].values
+y = datosp.iloc[:,1:27].values
 
 # Normalizacion de los datos
 datos_norm = (x-x.min())/(x.max()-x.min())
@@ -86,7 +86,9 @@ pca_nombre_datos = pd.concat([pca_datos_df, datos[['KMeans_Clusters']]], axis=1)
 pca1 = PCA(n_components=2)
 pca_datos1 = pca1.fit_transform(km.cluster_centers_)
 pca_datos_df1 = pd.DataFrame(data = pca_datos1, columns = ['C1', 'C2'])
-print("Centroides:\n", pca_datos_df1)
+print('----------------------------------')
+print("Centroides:\n", km.cluster_centers_)
+print('----------------------------------')
 
 #crea la figura con los puntos en dos dimenciones de los datos de entrenamiento clasificados
 fig, plt2 = plt.subplots(figsize=(10,5))
@@ -98,7 +100,13 @@ plt2.set_title('Algoritmo k-means')
 
 """---------------------------------Prediccion de datos usando el modelo entrenado-------------------------------------------"""
 d = km.predict(datos_norm1)
-print(d)
+print('----------------------------------')
+print("Prediccion del modelo:\n", d)
+print('----------------------------------')
+
+print('----------------------------------')
+print("Distancias entrenamento:\n", km.fit_transform(datos_norm))
+print('----------------------------------')
 
 datosp['KMeans_Clusters'] = d
 
@@ -111,7 +119,6 @@ pca_nombre_datos3 = pd.concat([pca_datos_df3, datosp[['KMeans_Clusters']]], axis
 pca4 = PCA(n_components=2)
 pca_datos4 = pca4.fit_transform(km.cluster_centers_)
 pca_datos_df4 = pd.DataFrame(data = pca_datos4, columns = ['D1', 'D2'])
-print("Centroides:\n", pca_datos_df4)
 
 #crea la figura con los puntos en dos dimenciones de los datos de prueba clasificados
 fig, plt4 = plt.subplots(figsize=(10,5))
@@ -120,5 +127,9 @@ for i in range(k):
 	plt4.scatter(x = pca_nombre_datos3.B1, y = pca_nombre_datos3.B2, s=10, c=colors[pca_nombre_datos3.KMeans_Clusters])
 plt4.scatter(x = pca_datos_df4.D1, y = pca_datos_df4.D2, s=30, c='red')
 plt4.set_title('Predicción de algoritmo k-means')
+
+print('----------------------------------')
+print("Distancias prueba:\n", km.fit_transform(datos_norm1))
+print('----------------------------------')
 
 plt.show()
