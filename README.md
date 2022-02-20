@@ -53,9 +53,16 @@ Dentro de un árbol de decisión distinguimos diferentes tipos de nodos:
 - Se pierde información cuando se utilizan para categorizar una variable numérica continua. [4]
 
 ### Algoritmo J48
+Es uno de los algoritmos de minería de datos más utilizados. El algoritmo del árbol de decisión es para averiguar la forma en que se comporta el vector de atributos para una serie de instancias, este algoritmo genera un árbol de decisión injertado el cual es utilizado en esencia para reducir errores de predicción al momento de generar un modelo. [5] [6] 
+
 ### Decision Stump
+El operador Decision Stump se utiliza para generar un árbol de decisión con una única división. El árbol resultante se puede utilizar para clasificar ejemplos no vistos.  Los nodos de hoja de un árbol de decisión contienen el nombre de la clase, mientras que un nodo que no es de hoja es un nodo de decisión. El nodo de decisión es una prueba de atributo en la que cada rama (a otro árbol de decisión) es un valor posible del atributo. [7] [8]
+
 ### LMT
+Los árboles modelo logísticos se basan en la idea anterior de un árbol modelo: un árbol de decisión que tiene modelos de regresión lineal en sus hojas para proporcionar un modelo de regresión lineal por partes, es decir, los árboles de decisión ordinarios con constantes en sus hojas producirían un modelo constante por partes [9]
 ### Random Tree
+Random Tree es un Clasificador supervisado; es un algoritmo de aprendizaje que genera conjuntos de aprendizajes individuales. Los árboles aleatorios son un grupo de predictores de árboles que se denomina bosque. Los mecanismos de clasificación son los siguientes: el clasificador de árboles aleatorios obtiene el vector de características de entrada, lo clasifica con cada árbol del bosque y genera la etiqueta de clase que recibió la mayoría de los "votos". Los árboles aleatorios son esencialmente la combinación de dos algoritmos existentes en el aprendizaje automático: los árboles modelo únicos se fusionan con modelos de bosques aleatorios.[10]
+
 ## Clústers
 ### Kmeans
 El algoritmo de agrupación en clústeres de K-Means se define como un método de aprendizaje no supervisado que tiene un proceso iterativo en el que el conjunto de datos se agrupa en un número k de clústeres o subgrupos predefinidos que no se superponen, haciendo que los puntos internos del clúster sean lo más similares posible mientras se intenta mantener el agrupa en un espacio distinto.
@@ -75,7 +82,7 @@ Etiquetas para el conjunto de datos de entrenamiento. Cada etiqueta pertenecient
 4.  Seleccionamos la variable que nos permitira clasificar los datos
 ![Segundopaso](https://user-images.githubusercontent.com/40923800/154828995-ac41ec53-0d04-4db0-a57a-b966f04f54c9.png)
 
-
+5. 
 # Conclusión
 - 
 # Bibliografía
@@ -83,3 +90,10 @@ Etiquetas para el conjunto de datos de entrenamiento. Cada etiqueta pertenecient
 - [2] Tutorials Point, Machine Learning with Python. Disponible en: https://www.tutorialspoint.com/machine_learning_with_python/machine_learning_with_python_tutorial.pdf.
 - [3] Google, “Google Colab.” Disponible en: https://research.google.com/colaboratory/intl/es/faq.html (consultado Feb. 19, 2022).
 - [4] Qué son los árboles de decisión y para qué sirven | Máxima Formación. (n.d.). Retrieved February 13, 2022, from https://www.maximaformacion.es/blog-dat/que-son-los-arboles-de-decision-y-para-que-sirven/
+- [5] https://1library.co/article/algoritmo-graft-trabajar-distintos-atributos-lidiar-problemas-t%C3%ADpicos.zx52jowq
+- [6] https://www.researchgate.net/publication/338023179_J48_algorithms_of_machine_learning_for_predicting_user%27s_the_acceptance_of_an_E-orientation_systems
+- [7] https://docs.rapidminer.com/latest/studio/operators/modeling/predictive/trees/decision_stump.html
+- [8] https://link.springer.com/referenceworkentry/10.1007/978-0-387-30164-8_202
+- [9] https://www.cs.waikato.ac.nz/~ml/publications/2003/landwehr-etal.pdf
+- [10] http://www.irdindia.in/journal_ijaece/pdf/vol3_iss4/2.pdf
+
