@@ -25,7 +25,9 @@ Python es un popular lenguaje de programación orientado a objetos que tiene las
 ## Google Colab
 Es un producto de Google Research. Permite a cualquier usuario escribir y ejecutar código arbitrario de Python en el navegador. Es especialmente adecuado para tareas de aprendizaje automático, análisis de datos y educación. Desde un punto de vista más técnico, Colab es un servicio alojado de Jupyter Notebook que no requiere configuración y que ofrece acceso gratuito a recursos informáticos, como GPUs.[3]
 
+
+
 # Bibliografía
-[1] <div class="csl-entry">Tutorials Point. (n.d.). <i>What is Weka?</i> Retrieved February 18, 2022, from https://www.tutorialspoint.com/weka/what_is_weka.htm</div>
-[2] <div class="csl-entry">Tutorials Point. (2019). <i>Machine Learning with Python</i> (Tutorials Point, Ed.). https://www.tutorialspoint.com/machine_learning_with_python/machine_learning_with_python_tutorial.pdf</div>
-[3] <div class="csl-entry">Google. (n.d.). <i>Google Colab</i>. Retrieved February 18, 2022, from https://research.google.com/colaboratory/intl/es/faq.html</div>
+- [1] Tutorials Point, “What is Weka?”. Disponible en: https://www.tutorialspoint.com/weka/what_is_weka.htm (consultado Feb. 19, 2022).
+- [2] Tutorials Point, Machine Learning with Python. Disponible en: https://www.tutorialspoint.com/machine_learning_with_python/machine_learning_with_python_tutorial.pdf.
+- [3] Google, “Google Colab.” Disponible en: https://research.google.com/colaboratory/intl/es/faq.html (consultado Feb. 19, 2022).
