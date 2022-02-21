@@ -181,6 +181,7 @@ https://www.youtube.com/watch?v=-tIeM2X06gE
 
 - Cada uno de los algoritmos tienen diferente forma de procesar la información, pero de los algoritmos empleados dentro de este experimento se ha determinado que el algoritmo ***random tree*** es que mayor porcentaje de aciertos da en comparación con los demás algoritmos usados.
 
+- El algoritmo k-Means nos ofrece una forma de agrupar los datos de manera simple y sin la necesidad de usar gran poder computacional, sin embargo uno de sus inconvenientes es de que el numero de clusters debe ser colocado con lo cual se necesita hacer varias pruebas hasta encontrar el numero adecuado.
 
 # Bibliografía
 - [1] Tutorials Point, “What is Weka?”. Disponible en: https://www.tutorialspoint.com/weka/what_is_weka.htm (consultado Feb. 19, 2022).
