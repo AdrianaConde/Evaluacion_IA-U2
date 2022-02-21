@@ -176,6 +176,8 @@ En la siguiente imagen aparece como quedron distribuidos los clusters para las d
 ![ksnip_20220220-201623](https://user-images.githubusercontent.com/40868390/154873988-415e4a51-a3f5-4370-b1c8-d6a22e46184a.png)
 # Video de explicación de algoritmos
 https://www.youtube.com/watch?v=-tIeM2X06gE 
+
+[![video](https://img.youtube.com/vi/-tIeM2X06gE/0.jpg)](https://www.youtube.com/watch?v=-tIeM2X06gE)
 # Conclusión
 - Los algoritmos machine learning permiten identificar patrones dentro de un conjunto grande de datos y la información que se obtiene se usa posteriormente para realizar predicciones sin la necesidad de que estos sean programados sino que atraves de la información obtenida va haciendo las predicciones con los nuevos datos
 
