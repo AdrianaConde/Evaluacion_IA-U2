@@ -187,5 +187,6 @@ En la siguiente imagen aparece como quedron distribuidos los clusters para las d
 - [7] Webb, G. I., Fürnkranz, J., Fürnkranz, J., Fürnkranz, J., Hinton, G., Sammut, C., Sander, J., Vlachos, M., Teh, Y. W., Yang, Y., Mladeni, D., Brank, J., Grobelnik, M., Zhao, Y., Karypis, G., Craw, S., Puterman, M. L., & Patrick, J. (2011). Decision Stump. Encyclopedia of Machine Learning, 262–263. https://doi.org/10.1007/978-0-387-30164-8_202
 - [8] Landwehr, N., Hall, M., & Frank, E. (n.d.). Logistic Model Trees
 - [9] Mishra, A. K., & Ratha, B. K. (n.d.). Study of Random Tree and Random Forest Data Mining Algorithms for Microarray Data Analysis. International Journal on Advanced Electrical and Computer Engineering.
-- [10]
-- 
+- [10] Youtube.com. 2022. [online] Valido en: <https://www.youtube.com/watch?v=EItlUEPCIzM> [Accessed 17 February 2022].
+- [11] La tecnología cambia la vida futura – Gobetech.com. 2022. ¿Cuáles son las ventajas de la agrupación de K-Means?. [online] Valido en: <https://tech.gobetech.com/31740/cuales-son-las-ventajas-de-la-agrupacion-de-k-means.html> [Acceso 19 February 2022].
+- [12] The Machine Learners. 2022. Algoritmo K-Means | Clustering de forma sencilla. [online] Valido en: <https://www.themachinelearners.com/k-means/> [Acceso 19 February 2022].
