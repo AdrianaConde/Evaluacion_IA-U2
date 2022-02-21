@@ -176,7 +176,9 @@ En la siguiente imagen aparece como quedron distribuidos los clusters para las d
 ![ksnip_20220220-201623](https://user-images.githubusercontent.com/40868390/154873988-415e4a51-a3f5-4370-b1c8-d6a22e46184a.png)
 
 # Conclusión
-- 
+- Cada uno de los algoritmos empleados dentro de este experimento, tiene diferente forma de procesar la información, pero se ha determinado que el algoritmo ***random tree*** es que mayor porcentaje de aciertos da en comparación con los demás algoritmos
+
+
 # Bibliografía
 - [1] Tutorials Point, “What is Weka?”. Disponible en: https://www.tutorialspoint.com/weka/what_is_weka.htm (consultado Feb. 19, 2022).
 - [2] Tutorials Point, Machine Learning with Python. Disponible en: https://www.tutorialspoint.com/machine_learning_with_python/machine_learning_with_python_tutorial.pdf.
