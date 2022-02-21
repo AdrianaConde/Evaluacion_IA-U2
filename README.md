@@ -176,7 +176,9 @@ En la siguiente imagen aparece como quedron distribuidos los clusters para las d
 ![ksnip_20220220-201623](https://user-images.githubusercontent.com/40868390/154873988-415e4a51-a3f5-4370-b1c8-d6a22e46184a.png)
 
 # Conclusión
-- Cada uno de los algoritmos empleados dentro de este experimento, tiene diferente forma de procesar la información, pero se ha determinado que el algoritmo ***random tree*** es que mayor porcentaje de aciertos da en comparación con los demás algoritmos
+- Los algoritmos machine learning permiten identificar patrones dentro de un conjunto grande de datos y la información que se obtiene se usa posteriormente para realizar predicciones sin la necesidad de que estos sean programados sino que atraves de la información obtenida va haciendo las predicciones con los nuevos datos
+
+- Cada uno de los algoritmos tienen diferente forma de procesar la información, pero de los algoritmos empleados dentro de este experimento se ha determinado que el algoritmo ***random tree*** es que mayor porcentaje de aciertos da en comparación con los demás algoritmos usados.
 
 
 # Bibliografía
