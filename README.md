@@ -96,6 +96,9 @@ Ya hemos visto la potencia que tiene este algoritmo. Por lo sencillo que es de a
 - Fácil de interpretar los resultados de agrupamiento
 - Rápido y eficiente en términos de costo computacional, típicamente O (K * n * d)
 
+# Comparacion de Weka y Python
+![ksnip_20220220-204018](https://user-images.githubusercontent.com/40868390/154875469-547283e7-a2ae-4195-bc4f-07780d00d353.png)
+
 # Aplicación de los Algoritmos
 ## Arboles de Decision
 1. Abrimos la herramienta weka y seleccionamos la opcion Open File para poder cargar nuestro dataset.
