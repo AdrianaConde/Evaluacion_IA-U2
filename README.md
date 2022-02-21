@@ -20,8 +20,6 @@ Python es un popular lenguaje de programación orientado a objetos que tiene las
 - Python es un lenguaje que permite la creación de prototipos fácil y rápida
 - Incluye varios dominios como extracción de datos, manipulación de datos, análisis de datos, extracción de características, modelado, evaluación, implementación.
 
-
-
 # Algoritmos Utilizados
 ## Arboles de Decisión
 Un Árbol de Decisión es un método analítico que a través de una representación esquemática de las alternativas disponibles facilita la toma de mejores decisiones, especialmente cuando existen riesgos, costos, beneficios y múltiples opciones. El nombre se deriva de la apariencia del modelo parecido a un árbol y su uso es amplio en el ámbito de la toma de decisiones bajo incertidumbre.  [3] 
@@ -74,7 +72,31 @@ Se utiliza cuando tenemos un montón de datos sin etiquetar. El objetivo de este
 Los “centroides” de cada grupo que serán unas “coordenadas” de cada uno de los K conjuntos que se utilizarán para poder etiquetar nuevas muestras.
 Etiquetas para el conjunto de datos de entrenamiento. Cada etiqueta perteneciente a uno de los K grupos formados
 
-# Aplicación del Algoritmo
+
+### Criterio de parada para K-Means Clustering
+
+Existen tres criterios para terminar el algoritmo:
+
+- Los centroides dejan de cambiar. Es decir, después de múltiples iteraciones, los centroides de cada clúster no cambian. Por lo que se asume que el algoritmo ha convergido.
+- Los puntos dejan de cambiar de clúster. Parecido al anterior, pero esta vez no nos fijamos en los centroides, si no en los puntos que pertenecen a cada clúster. Cuando se observa que no hay un intercambio de clústers se asume que el modelo está entrenado.
+- Límite de iteraciones. Podemos fijar un número máximo de iteraciones que queremos que nuestro algoritmo ejecute antes de pararlo. Cuando llega a ese número, se asume que el modelo no va a mejorar drásticamente y se para el entrenamiento.
+
+### Desventajas de K-Means
+
+Ya hemos visto la potencia que tiene este algoritmo. Por lo sencillo que es de aplicar y la valiosa información sobre nuestros datos que nos aporta. Como no es oro todo lo que reluce, tengo que comentaros también las desventajas que ofrece:
+
+- Tenemos que elegir k nosotros mismos. Es muy posible que nosotros cometamos un error, o que sea imposible escoger una k óptima.
+- Es sensible a outliers. Los casos extremos hacen que el clúster se vea afectado. Aunque esto puede ser algo positivo a la hora de detectar anomalías.
+- Es un algoritmo que sufre de la maldición de la dimensionalidad. 
+
+### Ventajas de K-Means
+
+- Prácticamente funcionan bien, incluso algunos supuestos se rompen
+- Simple, fácil de implementar
+- Fácil de interpretar los resultados de agrupamiento
+- Rápido y eficiente en términos de costo computacional, típicamente O (K * n * d)
+
+# Aplicación de los Algoritmos
 ## Arboles de Decision
 1. Abrimos la herramienta weka y seleccionamos la opcion Open File para poder cargar nuestro dataset.
 <!--Imagen--> 
@@ -108,6 +130,48 @@ Finalmente obtenemos la grafica con los datos que se mencion, en este caso la pr
 12. Finalmente se observa la prediccion realizada con los nuevos datos
 ![CapturaFinal](https://user-images.githubusercontent.com/40923800/154865934-b596fc49-a783-47c9-9014-569618d5e07a.JPG)
 
+## K-Means
+
+1. Abrimos el programa Weka y cargamos nuestro dataset con el boton open file
+![ksnip_20220220-191326](https://user-images.githubusercontent.com/40868390/154871003-343c6762-ce68-498c-ba24-bad37e3d8219.png)
+
+2. Eliminamos las columnas que no contienen datos numericos, ya que el metodo solo trabaja con numeros
+![ksnip_20220220-192936](https://user-images.githubusercontent.com/40868390/154871600-5d5742f6-2e47-449d-9f70-e7b35ac68077.png)
+
+3. Nos dirigimos a la pestaña cluster en la parte superior
+
+4. Escogemos el algoritmo que deseamos usar con el boton choose, en este caso escogeremos el simple kmeans
+![ksnip_20220220-193502](https://user-images.githubusercontent.com/40868390/154871844-5931cb65-5f54-4ef5-99f6-e9fe1085a442.png)
+
+5. Colocamos los parametros para aplicar el algoritmo 
+![ksnip_20220220-193806](https://user-images.githubusercontent.com/40868390/154871978-e26d6203-5225-4c15-bb18-7071270f6754.png)
+
+6. Presionamos el boton start para empezar el entrenamiento
+![ksnip_20220220-194020](https://user-images.githubusercontent.com/40868390/154872084-7b078769-1c08-490e-b344-8897205c9d51.png)
+
+7. Luego de que el modelo se entrene se podra obserbar los siguientes resultados
+En la imagen podemos observar el numero de iteraciones realizado, tambien el valor de los centroides calculados
+![ksnip_20220220-194335](https://user-images.githubusercontent.com/40868390/154872243-dc095d42-6d8e-4df4-beb0-3dabfaa670c9.png)
+
+Podemos observar en la siguiente imagen como quedaron los grupos
+![ksnip_20220220-194641](https://user-images.githubusercontent.com/40868390/154872418-ca7ad9fc-23da-43df-b512-8208d474952a.png)
+
+En la siguiente imagen aparece como quedron distribuidos los clusters para las dos primeras columnas del dataset
+![ksnip_20220220-194902](https://user-images.githubusercontent.com/40868390/154872537-f1fac6ae-79f4-48f6-9b1c-3f7460db8f48.png)
+
+## Predicción
+
+8. Con el modelo entrenado podemos predecir como se agruparan nuevos datos, para ello elegimos el dataset de prueba
+
+9. Cargar el dataset de pruebas en weka para realizar la prediccion
+![ksnip_20220220-201241](https://user-images.githubusercontent.com/40868390/154873749-28530ac8-f463-4b3d-a979-ff79b38d5879.png)
+
+10. Finalmente se observa la prediccion realizada con los nuevos datos 
+![ksnip_20220220-201449](https://user-images.githubusercontent.com/40868390/154873870-829bf43a-68b5-448f-a929-71411e409ff6.png)
+
+En la siguiente imagen aparece como quedron distribuidos los clusters para las dos primeras columnas del nuevo dataset
+![ksnip_20220220-201623](https://user-images.githubusercontent.com/40868390/154873988-415e4a51-a3f5-4370-b1c8-d6a22e46184a.png)
+
 # Conclusión
 - 
 # Bibliografía
@@ -120,4 +184,6 @@ Finalmente obtenemos la grafica con los datos que se mencion, en este caso la pr
 - [7] https://link.springer.com/referenceworkentry/10.1007/978-0-387-30164-8_202
 - [8] https://www.cs.waikato.ac.nz/~ml/publications/2003/landwehr-etal.pdf
 - [9] http://www.irdindia.in/journal_ijaece/pdf/vol3_iss4/2.pdf
-
+- [10] https://www.themachinelearners.com/k-means/
+- [11] https://www.youtube.com/watch?v=EItlUEPCIzM
+- [12] https://tech.gobetech.com/31740/cuales-son-las-ventajas-de-la-agrupacion-de-k-means.html
