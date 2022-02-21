@@ -178,14 +178,13 @@ En la siguiente imagen aparece como quedron distribuidos los clusters para las d
 # Conclusión
 - 
 # Bibliografía
-- [1] Qué son los árboles de decisión y para qué sirven | Máxima Formación. (n.d.). Retrieved February 13, 2022, from https://www.maximaformacion.es/blog-dat/que-son-los-arboles-de-decision-y-para-que-sirven/
-- [2] El algoritmo J48-Graft Tree también es capaz de trabajar con distintos tipos de atributos y lidiar con los problemas típicos de ruido (Noise). (n.d.). Retrieved February 19, 2022, from https://1library.co/article/algoritmo-graft-trabajar-distintos-atributos-lidiar-problemas-t%C3%ADpicos.zx52jowq
-- [3] Ihya, R., Namir, A., el Filali, S., Ait Daoud, M., & Guerss, F. Z. (2019). J48 algorithms of machine learning for predicting user’s the acceptance of an E-orientation Systems. ACM International Conference Proceeding Series. https://doi.org/10.1145/3368756.3368995 
-- [4]Decision Stump - RapidMiner Documentation. (n.d.). Retrieved February 19, 2022, from https://docs.rapidminer.com/latest/studio/operators/modeling/predictive/trees/decision_stump.html
-- [5] Webb, G. I., Fürnkranz, J., Fürnkranz, J., Fürnkranz, J., Hinton, G., Sammut, C., Sander, J., Vlachos, M., Teh, Y. W., Yang, Y., Mladeni, D., Brank, J., Grobelnik, M., Zhao, Y., Karypis, G., Craw, S., Puterman, M. L., & Patrick, J. (2011). Decision Stump. Encyclopedia of Machine Learning, 262–263. https://doi.org/10.1007/978-0-387-30164-8_202
-- [6] Landwehr, N., Hall, M., & Frank, E. (n.d.). Logistic Model Trees
-- [7] Mishra, A. K., & Ratha, B. K. (n.d.). Study of Random Tree and Random Forest Data Mining Algorithms for Microarray Data Analysis. International Journal on Advanced Electrical and Computer Engineering.
-- [8]Tutorials Point, “What is Weka?”. Disponible en: https://www.tutorialspoint.com/weka/what_is_weka.htm (consultado Feb. 19, 2022)
-- [9] utorials Point, Machine Learning with Python. Disponible en: https://www.tutorialspoint.com/machine_learning_with_python/machine_learning_with_python_tutorial.pdf.
-- [10] Tutorials Point, “What is Weka?”. Disponible en: https://www.tutorialspoint.com/weka/what_is_weka.htm (consultado Feb. 19, 2022).
-- [11] Tutorials Point, Machine Learning with Python. Disponible en: https://www.tutorialspoint.com/machine_learning_with_python/machine_learning_with_python_tutorial.pdf.
+- [1] Tutorials Point, “What is Weka?”. Disponible en: https://www.tutorialspoint.com/weka/what_is_weka.htm (consultado Feb. 19, 2022)
+- [2] Tutorials Point, Machine Learning with Python. Disponible en: https://www.tutorialspoint.com/machine_learning_with_python/machine_learning_with_python_tutorial.pdf.
+- [3] Qué son los árboles de decisión y para qué sirven | Máxima Formación. (n.d.). Retrieved February 13, 2022, from https://www.maximaformacion.es/blog-dat/que-son-los-arboles-de-decision-y-para-que-sirven/
+- [4] El algoritmo J48-Graft Tree también es capaz de trabajar con distintos tipos de atributos y lidiar con los problemas típicos de ruido (Noise). (n.d.). Retrieved February 19, 2022, from https://1library.co/article/algoritmo-graft-trabajar-distintos-atributos-lidiar-problemas-t%C3%ADpicos.zx52jowq
+- [5] Ihya, R., Namir, A., el Filali, S., Ait Daoud, M., & Guerss, F. Z. (2019). J48 algorithms of machine learning for predicting user’s the acceptance of an E-orientation Systems. ACM International Conference Proceeding Series. https://doi.org/10.1145/3368756.3368995 
+- [6]Decision Stump - RapidMiner Documentation. (n.d.). Retrieved February 19, 2022, from https://docs.rapidminer.com/latest/studio/operators/modeling/predictive/trees/decision_stump.html
+- [7] Webb, G. I., Fürnkranz, J., Fürnkranz, J., Fürnkranz, J., Hinton, G., Sammut, C., Sander, J., Vlachos, M., Teh, Y. W., Yang, Y., Mladeni, D., Brank, J., Grobelnik, M., Zhao, Y., Karypis, G., Craw, S., Puterman, M. L., & Patrick, J. (2011). Decision Stump. Encyclopedia of Machine Learning, 262–263. https://doi.org/10.1007/978-0-387-30164-8_202
+- [8] Landwehr, N., Hall, M., & Frank, E. (n.d.). Logistic Model Trees
+- [9] Mishra, A. K., & Ratha, B. K. (n.d.). Study of Random Tree and Random Forest Data Mining Algorithms for Microarray Data Analysis. International Journal on Advanced Electrical and Computer Engineering.
+
