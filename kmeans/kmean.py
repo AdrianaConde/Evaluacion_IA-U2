@@ -104,6 +104,11 @@ print('----------------------------------')
 print("Prediccion del modelo:\n", d)
 print('----------------------------------')
 
+datos_en_prediccion = pd.Series(d).value_counts()
+print('----------------------------------')
+print("Nro de datos en cada grupo:\n", datos_en_prediccion)
+print('----------------------------------')
+
 print('----------------------------------')
 print("Distancias entrenamento:\n", km.fit_transform(datos_norm))
 print('----------------------------------')
